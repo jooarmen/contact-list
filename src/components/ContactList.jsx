@@ -11,7 +11,7 @@ const dummyContacts = [
   ];
 
 
-function ContactList(){
+function ContactList({setSelectedContactId}){
     const [contacts, setContacts] = useState(dummyContacts)
     //console.log("Contacts: ", contacts)
     useEffect(()=>{
@@ -35,9 +35,9 @@ function ContactList(){
         </thead>
         <tbody>
             <tr>
-                <td>Name</td>
-                <td>Email</td>
-                <td>Phone</td>
+                <td>name</td>
+                <td>email</td>
+                <td>phone</td>
             </tr>
             {
                 contacts.map((contact)=>{
