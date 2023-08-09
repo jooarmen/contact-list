@@ -31,7 +31,7 @@ import { useEffect } from "react"
           <p>Username: {contact.username}</p>
         </div>
       ) : (
-        <p>Try Again Later</p>
+        <p>Loading contacts...</p>
       )}
       <button onClick={()=>setSelectedContactId(null)}>Back To Contacts</button>
         </div>
